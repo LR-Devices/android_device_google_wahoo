@@ -679,3 +679,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.lights=taimen_sys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+      media.recorder.show_manufacturer_and_model=true

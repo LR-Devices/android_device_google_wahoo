@@ -672,3 +672,10 @@ ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
   PRODUCT_PROPERTY_OVERRIDES += \
       persist.vendor.usb.usbradio.config=diag
 endif
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.taimen_sys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.lights=taimen_sys

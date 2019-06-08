@@ -28,8 +28,8 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.3
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-9.1/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
 TARGET_KERNEL_CONFIG := caesium_defconfig
 TARGET_KERNEL_ARCH := arm64

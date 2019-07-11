@@ -31,7 +31,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-9.1/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
-TARGET_KERNEL_CONFIG := caesium_defconfig
+TARGET_KERNEL_CONFIG := wahoo_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 
